@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         let url=URL(string: "https://api.giphy.com/v1/gifs/trending?api_key=FCVC1pCZsxGr3tACr4XrwOCjYCw3eAaN&limit=100&rating=pg-13")
         let task=URLSession.shared.dataTask(with: url!, completionHandler: {(data,response,error) in
             guard let data = data ,error == nil else{
-                print("Error Occured")
+                print("Error Occured!")
                 return
             }
             var gif:GifObj?
